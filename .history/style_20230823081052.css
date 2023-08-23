@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root{
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--Dark-Blue);
+    color: var(--Light-Cyan);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+img{
+ max-width: 100%;
+}
+
+.advice-box {
+    background-color: var(--Grayish-Blue);
+}
+  .quote {
+    font-size: 28px;
+  }
+
+  .advice-box h1 {
+    color: var(--Neon-Green);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+    letter-spacing: 0.4rem;
+  }
+  
+  .advice-box p {
+    font-size: 28px;
+    color: var(--Light-Cyan);
+    line-height: 1.5;
+    padding-bottom: 2rem;
+  }
+
+  .advice-box picture img {
+    background-color: var(--Grayish-Blue);
+    position: relative;
+  }
+  
+  .advice-box picture::before {
+    content: "";
+    width: 40%;
+    height: 1px;
+    background-color: var(--Light-Cyan);
+    right: 1.25rem;
+    bottom: 3.8rem;
+    position: absolute;
+    display: block;
+    z-index: 99;
+  }
+  
+  .advice-box picture::after {
+    content: "";
+    width: 45%;
+    height: 1px;
+    background-color: var(--Light-cyan);
+    left: 0;
+    bottom: 0.74rem;
+    position: relative;
+    display: block;
+  }
+  
+  .advice-box button {
+    background-color: var(--neon-green);
+    padding: 1.25rem;
+    border: none;
+    border-radius: 50%;
+    bottom: 13rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .advice-box button:hover {
+    background-color: hsl(150, 59%, 54%);
+  }
+
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+
+  @media (min-width: 500px) {
+    .advice-box {
+      max-width: 480px;
+    }
+  }
